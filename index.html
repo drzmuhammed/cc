@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crescent Clinic Home Page</title>
+  <style>
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    h3 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    body {
+            background: rgb(255, 255, 255);
+        }
+          
+        [data-tab-info] {
+            display: none;
+        }
+          
+        .active[data-tab-info] {
+            display: block;
+        }
+          
+        .tab-content {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+          
+        .tabs {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            margin: 0;
+        }
+          
+        .tabs span {
+            background: rgb(0, 0, 0);
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+          
+        .tabs span:hover {
+            background: rgb(102, 102, 102);
+            cursor: pointer;
+            color: white;
+        }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <span data-tab-value="#tab_1">Home</span>
+    <span data-tab-value="#tab_2">Doctors Schedule</span>
+    <span data-tab-value="#tab_3">Advertisements</span>
+</div>
+  <header>
+    <img src="cl.png" style="width:100px;height:100px;">
+    <h1>Crescent Clinic, Chattiparamb</h1>
+   </header> 
+  <main>
+  <div class="tab-content">
+    <div class="tabs__tab" id="tab_1" data-tab-info>
+      <h3>Malappuram Kerala Pin : 676503</h3>
+      <h1>Ph:9497469048</h1>
+      <h3><a href="https://www.google.com/maps/place/10%C2%B059'52.1%22N+76%C2%B005'30.6%22E/@10.9977937,76.0912858,249m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x6b2a1eef3ab26f04!8m2!3d10.9977924!4d76.091833" target="_blank">Click Here For Location Or Scan the QR Code below</a></h3>
+      <img src="loc.png" style="width:200px;height:200px;">
+    </div>
+      <div class="tabs__tab active" id="tab_2" data-tab-info>
+        <h2>Doctors Time Schedule</h2>
+        <table border="2" align="center">
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+          <tr>
+            <th>08:00AM - 12:00PM</th>
+            <th>Speciality 1</th>
+            <th>Speciality 2</th>
+            <th>Speciality 3</th>
+            <th>Speciality 4</th>
+            <th>Speciality 5</th>
+            <th>Speciality 6</th>
+            <th>Speciality 7</th>    
+          </tr>
+          <tr>
+            <th></th>
+            <th>Doc 1</th>
+            <th>Doc 2</th>
+            <th>Doc 3</th>
+            <th>Doc 4</th>
+            <th>Doc 5</th>
+            <th>Doc 6</th> 
+            <th>Doc 7</th>   
+          </tr>
+          <tr></tr>
+          <tr>
+            <th>01:00PM - 05:00PM</th>
+            <th>Speciality 1</th>
+            <th>Speciality 2</th>
+            <th>Speciality 3</th>
+            <th>Speciality 4</th>
+            <th>Speciality 5</th>
+            <th>Speciality 6</th>
+            <th>Speciality 7</th>    
+          </tr>
+          <tr>
+            <th></th>
+            <th>Doc 1</th>
+            <th>Doc 2</th>
+            <th>Doc 3</th>
+            <th>Doc 4</th>
+            <th>Doc 5</th>
+            <th>Doc 6</th> 
+            <th>Doc 7</th>   
+          </tr>
+          <tr></tr>
+          <tr>
+            <th>06:00PM - 10:00PM</th>
+            <th>Speciality 1</th>
+            <th>Speciality 2</th>
+            <th>Speciality 3</th>
+            <th>Speciality 4</th>
+            <th>Speciality 5</th>
+            <th>Speciality 6</th>
+            <th>Speciality 7</th>    
+          </tr>
+          <tr>
+            <th></th>
+            <th>Doc 1</th>
+            <th>Doc 2</th>
+            <th>Doc 3</th>
+            <th>Doc 4</th>
+            <th>Doc 5</th>
+            <th>Doc 6</th> 
+            <th>Doc 7</th>   
+          </tr>
+        </table>
+      </div>
+      <div class="tabs__tab" id="tab_3" data-tab-info>
+        <h1>Advertisement</h1>
+        <h3>Clinical Spaces For Rent</h3>
+      </div>
+  </div>
+  <script type="text/javascript">
+      const tabs = document.querySelectorAll('[data-tab-value]')
+      const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+      tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+              const target = document
+                  .querySelector(tab.dataset.tabValue);
+
+              tabInfos.forEach(tabInfo => {
+                  tabInfo.classList.remove('active')
+              })
+              target.classList.add('active');
+          })
+      })
+  </script>
+  </main>
+  <p></p>
+  <p></p>
+
+<footer class="footer">
+    <div class="copy">&copy; 2022 Crescent Clinic</div>
+  </footer>
+
+</body>
+</center>
+</html>
