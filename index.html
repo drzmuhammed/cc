@@ -4,12 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crescent Clinic Home Page</title>
+  <link rel="icon" type="image/x-icon" href="cl.ico">
   <style>
-    h1 {text-align: center;}
-    h2 {text-align: center;}
-    h3 {text-align: center;}
-    p {text-align: center;}
-    div {text-align: center;}
+    h1  {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 300%;
+      }
+    h2  {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 250%;
+      }
+    h3  {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 200%;
+      }
+    h4  {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 150%;
+      }
+    p   {
+        text-align: center;
+        font-family: courier;
+        font-size: 100%;
+      }
+    div {
+        text-align: center;
+      }
+      table, th, td {
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 100%;
+      }  
+    body {
+            background: rgb(255, 255, 255);
+        }
+          
+        [data-tab-info] {
+            display: none;
+        }
+          
+        .active[data-tab-info] {
+            display: block;
+        }
+          
+        .tab-content {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+          
+        .tabs {
+            font-size: 100%;
+            color: rgb(255, 255, 255);
+            display: flex;
+            margin: 0;
+        }
+          
+        .tabs span {
+            background: rgb(0, 0, 0);
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+          
+        .tabs span:hover {
+            background: rgb(102, 102, 102);
+            cursor: pointer;
+            color: white;
+        }
   </style>
 </head>
 
@@ -36,9 +106,8 @@
     </div>
     <div class="tabs__tab active" id="tab_2" data-tab-info>
       <h2>Doctors Time Schedule</h2>
-      <table border="2" align="center">
+      <table align="center" style="width:90%">
         <tr>
-          <th>Time</th>
           <th>Monday</th>
           <th>Tuesday</th>
           <th>Wednesday</th>
@@ -48,74 +117,75 @@
           <th>Sunday</th>
         </tr>
         <tr>
-          <th>08:00AM - 12:00PM</th>
-          <th>Speciality 1</th>
-          <th>Speciality 2</th>
-          <th>Speciality 3</th>
-          <th>Speciality 4</th>
-          <th>Speciality 5</th>
-          <th>Speciality 6</th>
-          <th>Speciality 7</th>    
+          <td colspan="7">08:00AM - 12:00PM</td>
         </tr>
         <tr>
-          <th></th>
-          <th>Doc 1</th>
-          <th>Doc 2</th>
-          <th>Doc 3</th>
-          <th>Doc 4</th>
-          <th>Doc 5</th>
-          <th>Doc 6</th> 
-          <th>Doc 7</th>   
-        </tr>
-        <tr></tr>
-        <tr>
-          <th>01:00PM - 05:00PM</th>
-          <th>Speciality 1</th>
-          <th>Speciality 2</th>
-          <th>Speciality 3</th>
-          <th>Speciality 4</th>
-          <th>Speciality 5</th>
-          <th>Speciality 6</th>
-          <th>Speciality 7</th>    
+          <td>Speciality 1</td>
+          <td>Speciality 2</td>
+          <td>Speciality 3</td>
+          <td>Speciality 4</td>
+          <td>Speciality 5</td>
+          <td>Speciality 6</td>
+          <td>Speciality 7</td>    
         </tr>
         <tr>
-          <th></th>
-          <th>Doc 1</th>
-          <th>Doc 2</th>
-          <th>Doc 3</th>
-          <th>Doc 4</th>
-          <th>Doc 5</th>
-          <th>Doc 6</th> 
-          <th>Doc 7</th>   
-        </tr>
-        <tr></tr>
-        <tr>
-          <th>06:00PM - 10:00PM</th>
-          <th>Speciality 1</th>
-          <th>Speciality 2</th>
-          <th>Speciality 3</th>
-          <th>Speciality 4</th>
-          <th>Speciality 5</th>
-          <th>Speciality 6</th>
-          <th>Speciality 7</th>    
+          <td>Doc 1</td>
+          <td>Doc 2</td>
+          <td>Doc 3</td>
+          <td>Doc 4</td>
+          <td>Doc 5</td>
+          <td>Doc 6</td> 
+          <td>Doc 7</td>   
         </tr>
         <tr>
-          <th></th>
-          <th>Doc 1</th>
-          <th>Doc 2</th>
-          <th>Doc 3</th>
-          <th>Doc 4</th>
-          <th>Doc 5</th>
-          <th>Doc 6</th> 
-          <th>Doc 7</th>   
+          <td colspan="7">01:00PM - 04:00PM</td>
         </tr>
+        <tr>
+          <td>Speciality 1</td>
+          <td>Speciality 2</td>
+          <td>Speciality 3</td>
+          <td>Speciality 4</td>
+          <td>Speciality 5</td>
+          <td>Speciality 6</td>
+          <td>Speciality 7</td>    
+        </tr>
+        <tr>
+          <td>Doc 1</td>
+          <td>Doc 2</td>
+          <td>Doc 3</td>
+          <td>Doc 4</td>
+          <td>Doc 5</td>
+          <td>Doc 6</td> 
+          <td>Doc 7</td>   
+        </tr>
+        <tr>
+          <td colspan="7">05:00PM - 10:00PM</td>
+        </tr>
+        <tr>
+          <td>Speciality 1</td>
+          <td>Speciality 2</td>
+          <td>Speciality 3</td>
+          <td>Speciality 4</td>
+          <td>Speciality 5</td>
+          <td>Speciality 6</td>
+          <td>Speciality 7</td>    
+        </tr>
+        <tr>
+          <td>Doc 1</td>
+          <td>Doc 2</td>
+          <td>Doc 3</td>
+          <td>Doc 4</td>
+          <td>Doc 5</td>
+          <td>Doc 6</td> 
+          <td>Doc 7</td>   
+        </tr>        
       </table>
     </div>
     <div class="tabs__tab" id="tab_3" data-tab-info>
       <h1>Clinical Spaces For Rent</h1>
       <h4>For Speciality or Super Speciality Clinics Only</h4>
       <h3>Time Slots Available</h3>
-      <table border="2" align="center">
+      <table align="center" style="width:90%">
         <tr>
           <th>Room</th>
           <th>Monday</th>
@@ -130,224 +200,224 @@
           <td colspan="8">08:00AM - 12:00PM</td>
         </tr>
         <tr>
-          <th>OP Room 1</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 1</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 2</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 2</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 3</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 3</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 4</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 4</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 5</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 5</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 6</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 6</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 7</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 7</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
           <td colspan="8">01:00PM - 04:00PM</td>
         </tr>
         <tr>
-          <th>OP Room 1</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 1</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 2</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 2</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 3</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 3</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 4</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 4</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 5</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 5</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 6</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 6</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 7</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 7</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
           <td colspan="8">05:00PM - 10:00PM</td>
         </tr>
         <tr>
-          <th>OP Room 1</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 1</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 2</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 2</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 3</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 3</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 4</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 4</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 5</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 5</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 6</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 6</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
         <tr>
-          <th>OP Room 7</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
-          <th>Vacant</th>
+          <td>OP Room 7</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
+          <td>Vacant</td>
         </tr>
       </table>
       <h3>Room Specifications</h3>
-      <table border="2" align="center">
+      <table align="center" style="width:90%">
         <tr>
           <th>Rooms</th>
           <th>Breadth (cm)</th>
@@ -434,46 +504,5 @@
       })
   })
 </script>
-<style>
-  body {
-            background: rgb(255, 255, 255);
-        }
-          
-        [data-tab-info] {
-            display: none;
-        }
-          
-        .active[data-tab-info] {
-            display: block;
-        }
-          
-        .tab-content {
-            font-size: 20px;
-            font-family: sans-serif;
-            font-weight: bold;
-            text-align: center;
-            color: rgb(0, 0, 0);
-        }
-          
-        .tabs {
-            font-size: 20px;
-            color: rgb(255, 255, 255);
-            display: flex;
-            margin: 0;
-        }
-          
-        .tabs span {
-            background: rgb(0, 0, 0);
-            padding: 10px;
-            border: 1px solid rgb(255, 255, 255);
-        }
-          
-        .tabs span:hover {
-            background: rgb(102, 102, 102);
-            cursor: pointer;
-            color: white;
-        }
-        
-</style>
 </body>
 </html>
